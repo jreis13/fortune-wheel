@@ -18,8 +18,8 @@
   };
 
   const handleWin = (actualDeg) => {
-    const winningSymbolNum = Math.ceil(actualDeg / zoneSize);
-    display.innerHTML = symbolZones[winningSymbolNum];
+    const winningSymbolNum = Math.ceil(actualDeg / zoneSize); // Rounds up if decimal value
+    display.innerHTML = symbolZones[winningSymbolNum]; // Replaces number for the text
   };
 
   startButton.addEventListener("click", () => {
